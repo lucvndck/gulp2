@@ -1,0 +1,41 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    };
+}
+
+body {
+    font-family: $headfont;
+    font-size: 18px;
+    background-color: $mainColor;
+}
+#{headings()}{
+    font-family: $bodyfont;
+}
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+footer {
+    .flLeft {
+        float: left;
+        width: 40%;
+    }
+    .flRight {
+        float: right;
+        width: 40%;
+        p {
+            text-align: right;
+        }
+    }
+}
+header {
+    background-color: #333;
+    color: #eee;
+}
+nav {
+    background-color: red; 
+}
